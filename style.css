@@ -1,0 +1,31 @@
+:root {
+
+    /* BASEFARGER */
+
+    /* "Parchment" */
+    --primary-color:#FAF7F2; 
+
+    /* Antique White */
+    --secondary-color:#F1E7D8;
+    
+
+
+    /* ACCENT FARGER */
+
+    /* Muted Teal */
+    --accent-color-primary: #7A9D8C;
+
+    /* Powder Blush */
+    --accent-color-secondary: #F2B8A2;
+
+    /* TEKST FARGE */
+
+    --text-color-primary: #3E342D;
+}
+
+/* GLOBAL STLYING */
+
+body{
+    background-color: var(--primary-color);
+    color: var(--text-color-primary);
+}
