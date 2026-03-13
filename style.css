@@ -3,10 +3,10 @@
     /* BASEFARGER */
 
     /* "Parchment" */
-    --primary-color:#FAF7F2; 
+    --primary-color:#F1E7D8; 
 
     /* Antique White */
-    --secondary-color:#F1E7D8;
+    --secondary-color:#FAF7F2;
     
 
 
@@ -28,4 +28,47 @@
 body{
     background-color: var(--primary-color);
     color: var(--text-color-primary);
+}
+
+/* STYLING FOR HEADER */
+
+header{
+    display: flex;
+    height: 220px;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+/* Styling for logo og navbar */
+
+.header-container{
+    display: flex;
+    background-color: var(--secondary-color);
+    flex-direction: column;
+    width: 928px;
+    border-radius: 100px;
+    padding-left: 100px;
+    margin-left: 50px;
+    
+}
+
+#main-headline{
+    color: red;
+    padding-left: 50px;
+
+}
+ul{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-right: 180px;
+}
+
+li{
+    list-style-type: none;
+}
+a{
+   
 }
