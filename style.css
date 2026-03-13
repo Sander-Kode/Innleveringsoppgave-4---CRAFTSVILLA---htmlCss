@@ -48,6 +48,7 @@ header{
     background-color: var(--secondary-color);
     flex-direction: column;
     width: 928px;
+    max-height: 158px;
     border-radius: 100px;
     padding-left: 100px;
     margin-left: 50px;
@@ -59,16 +60,45 @@ header{
     padding-left: 50px;
 
 }
-ul{
+nav ul{
     display: flex;
-    gap: 10px;
+    
     justify-content: space-between;
     margin-right: 180px;
 }
 
-li{
+nav li{
     list-style-type: none;
+    max-height: 60px ;
+    align-items: center;
+    
+    background-color: var(--accent-color-primary);
+    padding: 18px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+
+    
 }
-a{
+
+/* hover effekt for knappene i header/nav */
+li:hover {
+    
+    border: solid 2px black;
+        
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--text-color-primary);
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    
    
 }
+.nav-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
