@@ -21,6 +21,10 @@
     /* TEKST FARGE */
 
     --text-color-primary: #3E342D;
+
+
+
+    
 }
 
 /* GLOBAL STLYING */
@@ -28,17 +32,40 @@
 body{
     background-color: var(--primary-color);
     color: var(--text-color-primary);
+    
+    
+    
+
 }
+
+
+h2{
+    font-size: 40px;
+}
+
+.section-divider{
+    height: 100px;
+    background-color: var(--accent-color-primary);
+    margin: 80px;
+}
+
+
 
 /* STYLING FOR HEADER */
 
 header{
     display: flex;
     height: 220px;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 100px;
     align-items: center;
+    margin-bottom: 40px;
     
 
+}
+
+header img {
+    width: 395px;
 }
 
 /* Styling for logo og navbar */
@@ -81,7 +108,7 @@ nav li{
 }
 
 /* hover effekt for knappene i header/nav */
-li:hover {
+nav li:hover {
     
     border: solid 2px black;
         
@@ -101,4 +128,125 @@ nav a{
     height: 20px;
     flex-shrink: 0;
 }
+
+
+/* Styling for MAIN */
+
+/* Hero styling */
+
+.hero{
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+
+}
+
+
+.hero img{
+    height: 626px;
+    width: 887px;
+    border-radius: 37px;
+}
+
+.hero-text{
+    width:438px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    padding-top: 40px;
+}
+
+.hero-text h2{
+    padding: 0px 20px 0px 20px;
+}
+
+#hero-text-secondary{
+    font-size: 24px;
+}
+
+#hero-text-tertiary{
+    font-size: 20px;
+    padding: 0px 20px 0px 20px;
+    
+}
+
+#hero-button{
+    background-color: var(--accent-color-primary);
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid var(--text-color-primary);
+    color: var(--text-color-primary);
+}
+
+
+
+/* Styling for Who we are section */
+
+.about-us{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    height: 100vh;
+    align-items: center;
+}
+
+.about-text-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 537px;
+    font-size: 24px;
+    margin-top: 80px;
+    gap: 200px;
+}
+
+
+.portretter-container{
+    display: flex;
+}
+
+
+div.portretter img{
+    width: 250px;
+    height: 320px;
+    border-radius: 135px;
+}
+
+
+/* Styling for what we offer seksjonen */
+
+.what-we-offer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.services-container{
+    display: flex;
+    gap: 25px;
+}
+div.services-container img{
+    width: 300px;
+    height: 458px;
+    border-radius: 78px;
+}
+
+.service-card{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.service-card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
 
