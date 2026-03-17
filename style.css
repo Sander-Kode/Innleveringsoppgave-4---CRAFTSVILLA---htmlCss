@@ -49,6 +49,18 @@ h2{
     margin: 80px;
 }
 
+.page-button{
+    background-color: var(--accent-color-primary);
+    padding: 15px 20px 15px 20px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    color: var(--text-color-primary);
+}
+
+.page-button:hover{
+    border: 2px solid var(--text-color-primary);
+}
+
 
 
 /* STYLING FOR HEADER */
@@ -172,13 +184,6 @@ nav a{
     
 }
 
-#hero-button{
-    background-color: var(--accent-color-primary);
-    padding: 10px;
-    border-radius: 50px;
-    border: 1px solid var(--text-color-primary);
-    color: var(--text-color-primary);
-}
 
 
 
@@ -220,15 +225,17 @@ div.portretter img{
 .what-we-offer{
     height: 100vh;
     display: flex;
+    align-items: center;
     justify-content: center;
+    gap: 100px;
 }
 .services-container{
     display: flex;
-    gap: 25px;
+    gap: 150px;
 }
 div.services-container img{
-    width: 300px;
-    height: 458px;
+    width: 250px;
+    height: 358px;
     border-radius: 78px;
 }
 
@@ -242,9 +249,30 @@ div.services-container img{
 .service-card-text{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     text-align: center;
+}
+
+.service-card-text p{
+    margin: 0px;
+
+}
+
+.what-we-offer-text{
+    max-width: 344px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+    gap: 35px;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    
+}
+
+.what-we-offer-text p{
+    font-size: 24px;
 }
 
 
