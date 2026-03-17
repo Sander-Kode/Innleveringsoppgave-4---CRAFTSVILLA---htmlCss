@@ -28,35 +28,48 @@
 }
 
 /* GLOBAL STLYING */
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: var(--primary-color);
     color: var(--text-color-primary);
     
-    
-    
 
 }
 
+/* Global styling for anchor tags i body */
+body a{
+    text-decoration-line: underline;
+    color: var(--text-color-primary);
+}
 
+/* Global styling for headlines i seksjonene */
 h2{
     font-size: 40px;
 }
 
+
+/* Styling for "divider" mellom seksjonene */
 .section-divider{
     height: 100px;
     background-color: var(--accent-color-primary);
     margin: 80px;
 }
 
+
+/* Styling for knappene rundt om kring i body */
 .page-button{
     background-color: var(--accent-color-primary);
     padding: 15px 20px 15px 20px;
     border-radius: 50px;
     border: 2px solid transparent;
     color: var(--text-color-primary);
+    font-size: 18px;
+    font-weight: 600;
 }
 
+/* Effekt for å vise at man hovrer knappene */
 .page-button:hover{
     border: 2px solid var(--text-color-primary);
 }
@@ -150,6 +163,7 @@ nav a{
     display: flex;
     justify-content: center;
     gap: 120px;
+    min-height: 100vh;
 
 }
 
@@ -274,6 +288,19 @@ div.services-container img{
 .what-we-offer-text p{
     font-size: 24px;
 }
+
+
+
+
+/* Styling for booking seksjonen */
+
+.booking-calendar{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    
+}
+
 
 
 
