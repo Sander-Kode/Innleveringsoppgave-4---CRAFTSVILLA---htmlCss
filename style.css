@@ -22,10 +22,14 @@
 
     --text-color-primary: #3E342D;
 
+    
+
 
 
     
 }
+
+
 
 /* GLOBAL STLYING */
 html{
@@ -34,6 +38,8 @@ html{
 body{
     background-color: var(--primary-color);
     color: var(--text-color-primary);
+    font-family: 'Poppins', sans-serif ;
+    
     
 
 }
@@ -42,11 +48,16 @@ body{
 body a{
     text-decoration-line: underline;
     color: var(--text-color-primary);
+    
 }
 
 /* Global styling for headlines i seksjonene */
 h2{
     font-size: 40px;
+}
+
+h1, h2, h3, h4{
+    font-family: "Playfair Display", serif;
 }
 
 
@@ -93,7 +104,7 @@ header img {
     width: 395px;
 }
 
-/* Styling for logo og navbar */
+/* STYLING FOR LOGO OG NAVBAR */
 
 .header-container{
     display: flex;
@@ -108,9 +119,19 @@ header img {
 }
 
 #main-headline{
-    color: red;
+    
     padding-left: 50px;
+    margin: 5px 0px 5px 0px;
 
+}
+
+/* for å splitte opp fargen på span elementene i headline */
+.crafts{
+    color: var(--accent-color-secondary);
+}
+
+.villa{
+    color: var(--accent-color-primary);
 }
 nav ul{
     display: flex;
@@ -155,7 +176,7 @@ nav a{
 }
 
 
-/* Styling for MAIN */
+/* STYLING FOR MAIN */
 
 /* Hero styling */
 
@@ -172,6 +193,7 @@ nav a{
     height: 626px;
     width: 887px;
     border-radius: 37px;
+    margin-top: 50px;
 }
 
 .hero-text{
@@ -248,7 +270,7 @@ div.portretter img{
     gap: 150px;
 }
 div.services-container img{
-    width: 250px;
+    width: 300px;
     height: 358px;
     border-radius: 78px;
 }
@@ -274,11 +296,11 @@ div.services-container img{
 }
 
 .what-we-offer-text{
-    max-width: 344px;
+    max-width: 384px;
     display: flex;
     flex-direction: column;
     margin-bottom: 150px;
-    gap: 35px;
+    gap: 55px;
     align-items: center;
     text-align: center;
     padding: 50px;
@@ -302,6 +324,68 @@ div.services-container img{
 }
 
 
+
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+section.gallery img{
+    border-radius: 15px;
+}
+
+.gallery-images{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+textarea {
+    width: 400px;
+    height: 150px;
+    resize: none;
+}
+
+
+
+/* Styling for feedback form/seksjonen */
+
+.feedback{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    
+}
+
+.feedback-form{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 100px;
+    background-color: var(--accent-color-primary);
+    border-radius: 20px;
+}
+
+#submit-button{
+    max-width: 150px;
+    min-width: 100px;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: var(--secondary-color);
+    align-self: center;
+    
+    
+}
+
+#submit-button:hover{
+    box-shadow: 0 8px 20px rgba(0,0,0,0.55);
+    
+}
 
 
 

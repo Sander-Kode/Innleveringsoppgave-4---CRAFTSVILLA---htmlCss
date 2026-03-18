@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRAFTSVILLA feedback</title>
@@ -13,7 +14,9 @@
     
     
     <div class="header-container">
-        <h1 id="main-headline">CRAFTSVILLA</h1>
+        <h1 id="main-headline">
+            <span class="crafts">CRAFTS</span><span class="villa">VILLA</span>
+        </h1>
         <nav>
             <ul>
                 <li>
@@ -46,21 +49,86 @@
         
     <img src="./images/Craftsvilla logo.png" alt="Logo av et lerret med et maleri på">
 
-
-
-
-        <div>
-
-
-
-       
-        </div>
-
     
 
 
 
 </header>
+
+<main>
+
+    <section class="feedback">
+        <form action="" class="feedback-form">
+
+            <div class="name-inputs">
+                <label for="">
+                    Whats your first name?
+                    <input type="text" name="name" id="" placeholder="Enter first name here">
+                </label>
+
+                
+                <label for="">
+                    Whats your last name?
+                    <input type="text" name="name" id="" placeholder="Enter last name here">
+                </label>
+            </div>
+
+
+            <fieldset>
+                <legend>How was your experience with us?</legend>
+                <label for="">
+                    <input type="radio" name="experience" value="poor">
+                    Poor
+                </label>
+                <label for="">
+                    <input type="radio" name="experience"" value="okay">
+                    Okay
+                </label>
+                <label for="">
+                    <input type="radio" name="experience"" value="good">
+                    Good
+                </label>
+                <label for="">
+                    <input type="radio" name="experience"" value="excellent">
+                    Excellent
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>What did you enjoy?</legend>
+
+                <label for="">
+                    <input type="checkbox" name="liked" value="atmosphere">
+                    Atmosphere
+                </label>
+
+                <label for="">
+                    <input type="checkbox" name="liked" value="staff">
+                    Staff
+                </label>
+
+                <label for="">
+                    <input type="checkbox" name="liked" value="art-options">
+                    Art-options
+                </label>
+
+                <label for="">
+                    <input type="checkbox" name="liked" value="price">
+                    Price
+                </label>
+
+            </fieldset>
+
+            <div class="textarea">
+                <legend>Do you have any additional feedback?</legend>
+                <textarea name="message" id="message" rows="6" placeholder="Write your feedback here!"></textarea>
+            </div>
+
+            <button type="submit" id="submit-button">Submit</button>
+        </form>
+
+    </section>
+</main>
 
 
 
